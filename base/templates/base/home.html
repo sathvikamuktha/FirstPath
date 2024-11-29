@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h3>This is the landing page for now!</h3>
+<div>
+    
+    <div>
+        {% for room in rooms %}
+        <div>
+            <h6>{{room.id}} -- {{room.name}}</h6>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
