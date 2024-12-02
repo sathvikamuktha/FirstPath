@@ -64,7 +64,7 @@ def room(request, pk):
     return render(request, 'base/room.html', context)
 
 
-@login_required(login_url='/login') #can create a job posting only if they are users
+@login_required(login_url='/login') #can create a job posting only if they are auth user
 def createRoom(request):
     form = RoomForm()
     if request.method == 'POST':
