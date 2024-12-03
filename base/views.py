@@ -96,6 +96,10 @@ def room(request, pk):
     context = {'room' : room, 'room_messages': room_messages, 'participants':participants}
     return render(request, 'base/room.html', context)
 
+def userProfile(request, pk):
+    user = user.objects.get(id=pk)
+    context = {'user': user}
+    return render(request, 'base/profile.html')
 
 @login_required(login_url='/login') #can create a job posting only if they are auth user
 def createRoom(request):
