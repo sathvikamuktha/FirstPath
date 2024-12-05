@@ -13,3 +13,16 @@
 <a href="{%url 'login'%}">Login</a>
 {% endif %}
 <hr> <!--This is going to be a line break thingy -->
+
+
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="{% url 'home' %}">FirstPath</a>
+    </div>
+    <ul class="navbar-links">
+        <ul><li><a href="{% url 'job-details' %}">Job portal</a></li></ul>
+        <ul><li><a href="{% url 'home' %}">advising</a></li></ul>
+        <ul><li><a href="{% url 'home' %}"></a>resume</li></ul>
+        <ul><li><a href="{% url 'home' %}">Logout</a></li></ul>
+    </ul>
+</nav>

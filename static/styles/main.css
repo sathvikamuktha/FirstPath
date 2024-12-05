@@ -8,7 +8,7 @@ body {
 }
 
 /* Navbar */
-nav {
+/* nav {
     background-color: #eb3f21; 
     padding: 10px;
     color: #ffffff;
@@ -28,6 +28,46 @@ nav a:hover {
     text-decoration: underline;
     background-color: #750000;
     
+} */
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    background-color: #eb3f21; /* Navbar background */
+    padding: 10px 20px;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for aesthetics */
+}
+
+.navbar-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex; /* Flexbox for horizontal alignment */
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ffffff; /* White text for links */
+    font-size: 1rem;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: #fffae8; /* Lighter text color on hover */
 }
 
 /* Messages */
