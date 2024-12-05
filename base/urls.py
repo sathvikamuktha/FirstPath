@@ -19,4 +19,6 @@ urlpatterns = [
     
     path('jobDetails/', views.jobDetails, name='job-details'),
 
+    
+
 ]

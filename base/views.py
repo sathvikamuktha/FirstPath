@@ -163,5 +163,8 @@ def deleteMessage(request, pk):
         return redirect('home')
     return render(request, 'base/delete.html', {'obj':message})
 
+
+#job description & job related stuff
 def jobDetails(request):
     return render(request)
+

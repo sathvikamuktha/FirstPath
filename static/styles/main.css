@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fffae89d; 
+    background-color: #fef7de9d; 
     color: #000000; /* Black for text */
     margin: 0;
     padding: 0;
@@ -37,8 +37,8 @@ nav a:hover {
     align-items: center;
     background-color: #eb3f21; /* Navbar background */
     padding: 10px 20px;
-    color: #ffffff; /* White text */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for aesthetics */
+    color: #fef7de9d; /* White text */
+    box-shadow: 0 4px 6px #fef7de9d; /* Shadow for aesthetics */
 }
 
 .navbar-logo a {
@@ -46,6 +46,7 @@ nav a:hover {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+
 }
 
 .navbar-links {
@@ -53,10 +54,13 @@ nav a:hover {
     list-style: none; /* Remove bullets */
     margin: 0;
     padding: 0;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
 }
 
 .navbar-links li {
     margin: 0 15px; /* Spacing between links */
+    color: #ffffff;
 }
 
 .navbar-links a {
@@ -67,7 +71,12 @@ nav a:hover {
 
 .navbar-links a:hover {
     text-decoration: underline;
-    color: #fffae8; /* Lighter text color on hover */
+    color: #fffae8;
+
+}
+
+.navbar-logo a:hover {
+    color: #ff0000;
 }
 
 /* Messages */
