@@ -7,7 +7,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from .models import Room, Topic, Message
-from .forms import RoomForm
+
+
 
 # rooms = [
 #     {'id':1, 'name' : 'Job Posting page!'},
@@ -167,4 +168,3 @@ def deleteMessage(request, pk):
 #job description & job related stuff
 def jobDetails(request):
     return render(request)
-
