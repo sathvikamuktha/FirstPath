@@ -171,5 +171,5 @@ def jobDetails(request):
     return render(request)
 
 
-def projects(request):
-    return render(request, 'projects.html')
+def project(request):
+    return render(request, 'project.html')
