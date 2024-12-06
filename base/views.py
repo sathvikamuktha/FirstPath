@@ -172,4 +172,4 @@ def jobDetails(request):
 
 
 def project(request):
-    return render(request, 'project.html')
+    return render(request, 'base/project.html')

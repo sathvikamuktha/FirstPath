@@ -233,6 +233,22 @@ button:hover {
     margin-top: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Project Card */
 .project-card {
     background-color: #ffffff;
@@ -259,7 +275,7 @@ button:hover {
 }
 
 .project-content h3 {
-    color: #eb3f21;
+    color: #000000;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
@@ -274,7 +290,7 @@ button:hover {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
-    background-color: #eb3f21;
+    background-color: #000000;
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
@@ -282,6 +298,7 @@ button:hover {
 }
 
 .project-link:hover {
-    background-color: #c7311a;
+    background-color: #fef7de9d;
+    color: #000000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
