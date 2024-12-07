@@ -3,9 +3,6 @@ from .models import Room
 
 from .models import Room, Project
 
-
-
-
 class RoomForm(ModelForm):
     class Meta:
         model = Room
