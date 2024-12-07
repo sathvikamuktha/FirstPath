@@ -6,8 +6,8 @@ from django.db.models import Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
-from .models import Room, Topic, Message, Project
-from .forms import RoomForm, ProjectForm
+from .models import Room, Topic, Message
+from .forms import RoomForm
 
 
 
@@ -169,7 +169,3 @@ def deleteMessage(request, pk):
 #job description & job related stuff
 def jobDetails(request):
     return render(request)
-
-
-def project(request):
-    return render(request, 'base/project.html')

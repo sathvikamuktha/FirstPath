@@ -23,9 +23,5 @@ urlpatterns = [
     
     path('jobDetails/', views.jobDetails, name='job-details'),
     
-    # Project Management
-    path('project/', views.project, name='project'),
-    # path('projects/create/', views.createProject, name='create-project'),
-    # path('projects/delete/<str:pk>/', views.deleteProject, name='delete-project'),
     
 ]
