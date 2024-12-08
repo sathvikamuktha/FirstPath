@@ -38,4 +38,13 @@ class Message(models.Model):
     def __str__(self):
         return self.body[0:50]
 
+class Project(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # The user who created the project
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    link = models.URLField(blank=True, null=True)  # Optional project link
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
 
