@@ -1,21 +1,21 @@
-<div>
+{% load static %}
+
+<div class="groups-container">
     {% for room in rooms %}
-    <div>
-
-        <h5>Group {{room.id}} - <a href="{% url 'room' room.id%}">{{room.name}}</a></h5>
-        <small>{{room.topic.name}}</small>
-
-       <h4> <a href="{% url 'user-profile' room.host.id %}">Creator: {{room.host.username}}</a>
-
+    <div class="group-card">
+        <h5 class="group-title">
+            Group {{ room.id }} - <a href="{% url 'room' room.id %}">{{ room.name }}</a>
+        </h5>
+        <small class="group-topic">{{ room.topic.name }}</small>
+        <h6 class="group-creator">
+            <a href="{% url 'user-profile' room.host.id %}">Creator: {{ room.host.username }}</a>
+        </h6>
         {% if request.user == room.host %}
-        <a href="{% url 'update-room' room.id %}">|| Edit </a>
-        <a href="{% url 'delete-room' room.id %}">|| Delete ||</a>
+        <div class="group-actions">
+            <a href="{% url 'update-room' room.id %}" class="edit-btn">Edit</a>
+            <a href="{% url 'delete-room' room.id %}" class="delete-btn">Delete</a>
+        </div>
         {% endif %}
-        </h4>
-        <hr>
-
-
     </div>
-
     {% endfor %}
 </div>
