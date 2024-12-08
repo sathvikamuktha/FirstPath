@@ -48,3 +48,15 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
+class Event(models.Model):
+    host = models.ForeignKey(User, on_delete=models.CASCADE)  # The user posting the event
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    location = models.CharField(max_length=200)
+    date = models.DateField()
+    time = models.TimeField()
+    major = models.CharField(max_length=200)  # Related major
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title

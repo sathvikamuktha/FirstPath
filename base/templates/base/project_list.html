@@ -16,6 +16,7 @@
         <a href="{{ project.link }}" target="_blank">View Project</a>
         {% endif %}
         <p>Created by: {{ project.user.username }} on {{ project.created|date:"F j, Y" }}</p>
+
     </li>
     {% endfor %}
 </ul>

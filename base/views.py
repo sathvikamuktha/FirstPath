@@ -6,8 +6,8 @@ from django.db.models import Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
-from .models import Room, Topic, Message, Project
-from .forms import RoomForm, ProjectForm
+from .models import Room, Topic, Message, Project, Event
+from .forms import RoomForm, ProjectForm, EventForm
 
 
 
@@ -191,3 +191,34 @@ def add_project(request):
             return redirect('project-list')
     context = {'form': form}
     return render(request, 'base/add_project.html', context)
+
+
+
+
+
+@login_required(login_url='login')
+def create_event(request):
+    form = EventForm()
+    if request.method == 'POST':
+        form = EventForm(request.POST)
+        if form.is_valid():
+            event = form.save(commit=False)
+            event.host = request.user
+            event.save()
+            return redirect('events-list')  # Redirect to the events list
+    context = {'form': form}
+    return render(request, 'base/create_event.html', context)
+
+
+def events_list(request):
+    events = Event.objects.all().order_by('date', 'time')  # Order by date and time
+    q = request.GET.get('q') if request.GET.get('q') else ''
+    if q:
+        events = events.filter(
+            Q(title__icontains=q) |
+            Q(description__icontains=q) |
+            Q(location__icontains=q) |
+            Q(major__icontains=q)
+        )
+    context = {'events': events}
+    return render(request, 'base/events_list.html', context)
