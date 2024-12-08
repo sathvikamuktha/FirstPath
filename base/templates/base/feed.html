@@ -3,19 +3,20 @@
 <div class="groups-container">
     {% for room in rooms %}
     <div class="group-card">
-        <h5 class="group-grid">
-            Group {{ room.id }} - <a href="{% url 'room' room.id %}">{{ room.name }}</a>
-        </h5>
+        <h3>Group Topic: <a href="{% url 'room' room.id %}">{{ room.name }}</a></h3>
+
         <small class="group-topic">{{ room.topic.name }} - {{room.description}}</small>
-        <h6 class="group-creator">
-            <a href="{% url 'user-profile' room.host.id %}">Creator: {{ room.host.username }}</a>
-        </h6>
+
+        <h5><a href="{% url 'user-profile' room.host.id %}">Creator: {{ room.host.username }}</a></h5>
+        
+        <h6>
         {% if request.user == room.host %}
-        <div class="group-actions">
+        <div>
             <a href="{% url 'update-room' room.id %}" class="edit-btn">Edit</a>
             <a href="{% url 'delete-room' room.id %}" class="delete-btn">Delete</a>
         </div>
         {% endif %}
+        </h6>  
         <hr>
     </div>
     {% endfor %}
