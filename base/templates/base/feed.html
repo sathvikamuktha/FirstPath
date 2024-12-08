@@ -3,7 +3,7 @@
 <div class="groups-container">
     {% for room in rooms %}
     <div class="group-card">
-        <h5 class="group-title">
+        <h5 class="group-grid">
             Group {{ room.id }} - <a href="{% url 'room' room.id %}">{{ room.name }}</a>
         </h5>
         <small class="group-topic">{{ room.topic.name }}</small>
@@ -16,6 +16,7 @@
             <a href="{% url 'delete-room' room.id %}" class="delete-btn">Delete</a>
         </div>
         {% endif %}
+        <hr>
     </div>
     {% endfor %}
 </div>
