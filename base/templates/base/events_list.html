@@ -1,11 +1,12 @@
 {% extends 'main.html' %}
-
 {% block content %}
 <h1>Events</h1>
+
 <form method="GET" action="{% url 'events-list' %}">
     <input type="text" name="q" placeholder="Search events..." value="{{ request.GET.q }}">
     <button type="submit">Search</button>
 </form>
+
 <a href="{% url 'create-event' %}">+ Add Event</a>
 
 <ul>
