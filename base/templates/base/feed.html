@@ -6,7 +6,7 @@
         <h5 class="group-grid">
             Group {{ room.id }} - <a href="{% url 'room' room.id %}">{{ room.name }}</a>
         </h5>
-        <small class="group-topic">{{ room.topic.name }}</small>
+        <small class="group-topic">{{ room.topic.name }} - {{room.description}}</small>
         <h6 class="group-creator">
             <a href="{% url 'user-profile' room.host.id %}">Creator: {{ room.host.username }}</a>
         </h6>

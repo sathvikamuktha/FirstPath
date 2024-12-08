@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 
-<h2>Add New Project</h2>
+<h1>Add New Project</h1>
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
