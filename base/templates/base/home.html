@@ -16,6 +16,7 @@
 
     <div> <!-- Rooms start-->
         <h5>Current Groups: {{room_count}}</h5>
+        
         <a href="{% url 'create-room' %}">Create a Group</a>
 
         {% include 'base/feed.html' %}
