@@ -16,9 +16,9 @@
 
     <div> <!-- Rooms start-->
         <h5>Current Groups: {{room_count}}</h5>
-        
-        <a href="{% url 'create-room' %}">Create a Group</a>
-
+        <hr>
+        <p>Can't find a group that sparks your interest? <a href="{% url 'create-room' %}">Create your own group </a>and get started!</p>
+        <hr>
         {% include 'base/feed.html' %}
 
     </div> <!--Rooms end-->
