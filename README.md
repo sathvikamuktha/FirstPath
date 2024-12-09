@@ -13,3 +13,4 @@ Frontend: HTML, CSS
 Backend: Django (Python)
 Database: SQLite (Development)
 Other Tools: Bootstrap (for responsive design), Git for version control
+![alt text](image.png)
