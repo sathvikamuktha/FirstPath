@@ -1,5 +1,5 @@
 # FirstPathFinalProject
-Overview: FirstPath is a career guidance platform tailored for students and fresh graduates. It provides tools and resources to help users showcase their skills, connect with like-minded individuals, and navigate the job market with ease.
+- FirstPath is a career guidance platform designed to help students and fresh graduates navigate the job market with ease. Featuring tools like personalized profiles, project showcases, event calendars, job search capabilities, and group networking, FirstPath empowers users to showcase their skills, connect with like-minded individuals, and confidently take the next steps in their careers.
 
 # Key features include:
 1. Personalized profiles to highlight skills and projects.
