@@ -9,8 +9,9 @@ Overview: FirstPath is a career guidance platform tailored for students and fres
 5. A job search page with advanced filtering options.
 
 # Tech Stack
-Frontend: HTML, CSS
-Backend: Django (Python)
-Database: SQLite (Development)
-Other Tools: Bootstrap (for responsive design), Git for version control
+- Frontend: HTML, CSS
+- Backend: Django (Python)
+- Database: SQLite (Development)
+- Other Tools: Bootstrap (for responsive design), Git for version control
+
 ![alt text](image.png)
