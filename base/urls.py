@@ -9,7 +9,8 @@ urlpatterns = [
     path('register/', views.registerPage, name="register"),
     
     # Home and Rooms
-    path('', views.home, name='home'),
+    path('home/', views.home, name='home'),
+    #path('', views.home, name='home'),
     path('room/<str:pk>/', views.room, name="room"),
     
     #Profiles
@@ -21,7 +22,7 @@ urlpatterns = [
     path('delete-room/<str:pk>/', views.deleteRoom, name="delete-room"),
     path('delete-message/<str:pk>/', views.deleteMessage, name="delete-message"),
     
-    path('jobDetails/', views.jobDetails, name='job-details'),
+    #path('jobDetails/', views.jobDetails, name='job-details'),
     
 
     path('projects/', views.project_list, name='project-list'),
@@ -30,5 +31,21 @@ urlpatterns = [
 
     path('events/', views.events_list, name="events-list"),
     path('create-event/', views.create_event, name="create-event"),
+
+    ##added for job search.
+    path('jobs/details/<str:pk>',views.job_description, name='job_description'),
+    path('jobDetails/', views.job_search, name = 'job-details'),
+
+
+
+
+    # path('layout/', views.layout, name="layout"),
+    path('about_us/', views.about_us, name="about_us"),
+    path('contact_us/', views.contact_us, name="contact_us"),
+    #path('projects_landing/', views.projects_landing, name="projects_landing"),
+    path('events/', views.events, name="events"),
+    # path('sign_up/', views.sign_up, name="sign_up"),
+
+    path('', views.landing_page, name="landing_page"), 
 
 ]

@@ -60,3 +60,15 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+    
+# Added for job search
+class Job(models.Model):
+    jobtitle = models.CharField(max_length = 100)
+    description = models.TextField(null = True, blank = True)
+    location = models.TextField(null = True, blank = True)
+    compname = models.TextField(null = True, blank = True)
+    compdesc = models.TextField(null = True, blank = True)
+    complocation = models.TextField(null = True, blank = True)
+
+    def __str__(self):
+        return self.jobtitle

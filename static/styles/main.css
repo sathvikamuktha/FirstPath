@@ -318,6 +318,33 @@ button:hover {
     color: #750000;
 }
 
+.content-border {
+    border: 2px solid #ccc; /* Adjust the border color */
+    padding: 20px;         /* Add some padding inside the border */
+    margin: 20px;          /* Add some spacing outside the border */
+    border-radius: 10px;   /* Optional: Add rounded corners */
+}
+
+/* Job List Styles */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between boxes */
+    margin-top: 20px;
+}
+
+.job-item {
+    width: 100%; /* Use a percentage width to make it responsive */
+    max-width: 2000px; /* Set a maximum width so it doesn't get too wide */
+    min-width: 900px; /* Set a minimum width to prevent it from shrinking too much */
+    border: 1px solid #ccc; /* Keep the border */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px auto; /* Center the box horizontally */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
 
 
 
