@@ -1,7 +1,6 @@
 <div> <!--  nav bar start -->
     <h3>Groups related to your Major:</h3>
     <hr>
-
     {% for topic in topics %}
     <div>
         <a href="{% url 'home' %}?q={{topic.name}}">{{topic.name}}</a>
