@@ -8,7 +8,6 @@ class RoomForm(ModelForm):
         fields = '__all__' # ['name', 'body']
         exclude = ['host', 'participants']
 
-
 class ProjectForm(forms.ModelForm):
     class Meta:
         model = Project
