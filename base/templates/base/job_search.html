@@ -1,5 +1,4 @@
 {% extends 'main.html' %}
-
 {% block content %}
 <div class="content-border">
     <h1>Job Search</h1>
@@ -11,8 +10,6 @@
         <input type="text" id="location" name="location" value="{{ form.location.value | default:'' }}">
         <button type="submit">Search</button>
     </form>
-
-
     <div class="job-list">
         {% if jobs %}
             {% for job in jobs %}
@@ -31,7 +28,6 @@
         {% endif %}
     </div>
 (/div>)
-
 {% endblock%}
 
 
