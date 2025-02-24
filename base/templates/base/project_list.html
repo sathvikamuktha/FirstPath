@@ -1,7 +1,6 @@
 {% extends 'main.html' %}
 {% block content %}
 {% load static %}
-
 <h1>Projects</h1>
 <div>
     <a href="{% url 'add-project' %}">+ Add New Project</a>
@@ -20,5 +19,4 @@
     </li>
     {% endfor %}
 </ul>
-
 {% endblock %}
