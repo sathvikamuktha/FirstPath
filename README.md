@@ -15,3 +15,5 @@
 - Other Tools: Bootstrap (for responsive design), Git for version control
 
 ![alt text](image.png)
+
+Quick demo by Group 6 : https://drive.google.com/file/d/1ZvuhfW27A9YR1bgq5AzLS6KHtwkpkWeB/view?usp=sharing
