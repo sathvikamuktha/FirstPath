@@ -16,4 +16,4 @@
 
 ![alt text](image.png)
 
-[**🔗 Live Demo:**](https://drive.google.com/file/d/1JTr6dkbqApFVqbU02rv6blMWkaG09MBK/view?usp=sharing)
+🔗 [Live Demo](https://drive.google.com/file/d/1JTr6dkbqApFVqbU02rv6blMWkaG09MBK/view?usp=sharing)
