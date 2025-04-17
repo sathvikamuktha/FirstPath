@@ -1,5 +1,5 @@
 # FirstPathFinalProject
-- FirstPath is a career guidance platform designed to help students and fresh graduates navigate the job market with ease. Developed this project as a coursework project for "software engineering" class in a team of 4 member. FirstPath features tools like personalized profiles, project showcases, event calendars, job search capabilities, and group networking. The platform empowers users to showcase their skills, connect with like-minded individuals, and confidently take the next steps in their careers.
+- FirstPath is a career guidance platform designed to help students and fresh graduates navigate the job market with ease. Developed this _group project_ for our "software engineering" class. FirstPath features tools like personalized profiles, project showcases, event calendars, job search capabilities, and group networking. The platform empowers users to showcase their skills, connect with like-minded individuals, and confidently take the next steps in their careers.
 
 ## Key features include:
 1. Personalized profiles to highlight skills and projects.
@@ -9,10 +9,10 @@
 5. A job search page with advanced filtering options.
 
 ## Tech Stack
-- Frontend: HTML, CSS
+- Frontend: HTML & CSS
 - Backend: Django (Python)
 - Database: SQLite (Development)
-- Other Tools: Bootstrap (for responsive design), Git for version control
+- Other Tools: Figma (Designed prototype), Bootstrap (for responsive design), Git for version control
 
 ![alt text](image.png)
 
